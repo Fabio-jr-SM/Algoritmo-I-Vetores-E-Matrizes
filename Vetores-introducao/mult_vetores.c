@@ -18,5 +18,5 @@ int main()
         mult_pares = mult_pares * v[i];
     }
     
-    printf("A soma é: %d",mult_pares);
+    printf("A multiplicação é: %d",mult_pares);
 }
