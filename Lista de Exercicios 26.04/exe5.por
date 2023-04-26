@@ -3,7 +3,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro numero[5],i,maiorV=0,soma_num=0
+		inteiro numero[5],i,maiorV=0,soma_num=0,media
 
 		para(i=0;i<5;i++){
 			escreva("Digite numeros: ")
@@ -21,22 +21,31 @@ programa
 
 		escreva("\n")
 
-		escreva("Menor valor no vetor:\n")
+		escreva("Maior valor no vetor:\n")
 		para(i=0;i<5;i++){
 			se(numero[i]>maiorV){
                	maiorV=numero[i]
             	}
 		}
 		escreva(maiorV,"\n")
+
+
+		escreva("Menor valor no vetor:\n")
+		para(i=0;i<5;i++){
+			se(numero[i]<maiorV){
+               	maiorV=numero[i]
+            	}
+		}
+		escreva(maiorV,"\n")
+		
 
 		media=soma_num/5
 
-		escreva("Menor valor no vetor:\n")
+		escreva("Valores maior que a media:\n")
 		para(i=0;i<5;i++){
-			se(numero[i]>maiorV){
-               	maiorV=numero[i]
+			se(numero[i]>media){
+               	escreva(numero[i]," ")
             	}
 		}
-		escreva(maiorV,"\n")
 	}
 }
