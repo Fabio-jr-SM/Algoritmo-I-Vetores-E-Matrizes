@@ -12,12 +12,12 @@ variaveis
 inicio
 
   para i de 1 ate 3 faca
-    escreva("Digite numero: )
+    escreva("Digite numero: );
     leia(vetor[i]);
-  fim_para
+  fim_para;
   
   para i de 1 ate 3 faca
     escreva(vetor[i], "  ");
-  fim_para
-fim_algoritmo
+  fim_para;
+fim_algoritmo;
 ```
