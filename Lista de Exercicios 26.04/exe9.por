@@ -23,13 +23,13 @@ programa {
 
 
     escreva("\nVetor Par:\n")
-    para(i=0;i<12;i++){
+    para(i=0;i<j;i++){
       escreva(par[i],"  ")
     }
 
 
     escreva("\nVetor Impar:\n")
-    para(i=0;i<12;i++){
+    para(i=0;i<k;i++){
       escreva(impar[i],"  ")
     }
   }
