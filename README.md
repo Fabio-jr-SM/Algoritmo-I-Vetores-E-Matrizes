@@ -2,6 +2,7 @@
 
 ## Vetores em Portugues estruturado
 
+```portugol
 Algoritmo VETOR
 
 variaveis
@@ -19,3 +20,4 @@ inicio
     escreva(vetor[i], "  ");
   fim_para
 fim_algoritmo
+```
