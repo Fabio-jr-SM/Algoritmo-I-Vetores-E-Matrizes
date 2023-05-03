@@ -2,7 +2,7 @@
 
 ## Vetores em Portugues estruturado
 
-```portugol
+```c
 Algoritmo VETOR
 
 variaveis
