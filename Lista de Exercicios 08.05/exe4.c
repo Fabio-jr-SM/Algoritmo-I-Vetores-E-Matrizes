@@ -1,57 +1,36 @@
+/******************************************************************************
+
+                            Exe 4
+
+*******************************************************************************/
+
 #include <stdio.h>
 
 int main()
-
 {
 
-    int n, num, a, cont;
+    int n, num[10], a, cont,j=0,k=0;
+    int somaPar,subImpar;
 
-    int soma;
 
-    int vetpar[12];
-
-    int vetimpar[12];
-
-    for(n=1;n<=12;n++)
-
-    {
-
-        printf("digite o %i numero: ", n);
-
-        scanf("%i", &num);
-
-        if(num % 2 == 0)
-
-        {
-
-            vetpar[12] = num;
-
-        }
-
-        if(num % 2 != 0)
-
-        {
-
-            vetimpar[12] = num;
-
+    for(n=0;n<10;n++){
+        printf("digite o %d numero: ", n+1);
+        scanf("%d", &num[n]);
         
-
+        if(num[n] % 2 == 0){
+            somaPar=somaPar+num[n];
+        } else{
+            subImpar=subImpar-num[n];
         }
-
-        
-
     }
-
-    for(cont=0;cont<11;cont++) 
-
-    {
-
-        vetpar[12] = vetpar[cont] + num;
-
+    
+    
+    printf("Vetor digitado: \n");
+    for(n=0;n<10;n++){
+        printf("%d  ",num[n]);
     }
-
-    printf("%i", vetpar);
-
-    return 0;
+    
+    printf("\nSoma dos numeros na posicao par: %d \n",somaPar);
+    printf("Subtração dos demais numeros: %d \n",subImpar);
 
 }
