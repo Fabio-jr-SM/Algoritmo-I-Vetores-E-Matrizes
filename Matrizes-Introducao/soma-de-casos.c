@@ -24,8 +24,8 @@ int main()
 			}
         }
           
-        i=0;
-        int k=i-1; 
+        
+        int k=linha-1; 
         
 		for(i=0;i<linha;i++){
 			for(j=0;j<coluna;j++){
