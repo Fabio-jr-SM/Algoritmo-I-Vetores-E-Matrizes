@@ -52,4 +52,5 @@ int main()
 
 		printf("\n\n\nSoma da Primeira coluna: %d",somacolun1);
 		printf("\nSoma da Diagonal principal: %d",somaDiagoP);
+		printf("\nSoma da Diagonal secundaria: %d",somaDiagoS);
 }
