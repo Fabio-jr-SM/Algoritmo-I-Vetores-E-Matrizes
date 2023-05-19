@@ -10,8 +10,8 @@
 
 int main()
 {
-    int num[6];
-    int i,k=0;
+    int num[6],somaPar=0;
+    int i ,cont=0;
     
     printf("vetor Digitado:\n");
     for(i=0;i<6;i++){
@@ -20,11 +20,21 @@ int main()
     }
     
     
-    printf("\n\nNumeros pares:\n");
+    printf("\n\nNumeros pares: ");
     for(i=0;i<6;i++){
         if(num[i]%2==0){
             printf("%d ",num[i]);
-            k++;
+            somaPar=somaPar+num[i];
         }
     }
+    printf("\n\nSoma numeros pares: %d",somaPar);
+    
+    printf("\n\nNumeros Impares: ");
+    for(i=0;i<6;i++){
+        if(num[i]%2!=0){
+            printf("%d ",num[i]);
+            cont++;
+        }
+    }
+    printf("\n\nQuantidade de numeros pares: %d",cont);
 }
