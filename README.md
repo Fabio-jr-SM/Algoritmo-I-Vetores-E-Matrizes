@@ -2,7 +2,7 @@
 
 ## Vetores em Portugues estruturado
 
-```portugol
+```c
 /******************************************************************************
  
 Autor: Fabio Junior Senna Moura
