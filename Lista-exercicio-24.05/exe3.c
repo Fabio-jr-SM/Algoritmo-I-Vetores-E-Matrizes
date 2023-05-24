@@ -16,11 +16,8 @@ int main()
     
     for(i=0;i<linha;i++){
         for(j=0;j<coluna;j++){
-            matriz[i][j]=rand()%10;
+            matriz[i][j]=(rand()%199)-100;
             printf("%d  ", matriz[i][j]);
-            if(matriz[i][j]<0){
-                cont;
-            }
         }  
         printf("\n");
     }
@@ -48,11 +45,20 @@ int main()
         }  
     }
     result=result/linha;
-    printf("%d \n",result);
-    return 0;
+    printf("%d \n\n",result);
+    
+    for(i=0;i<linha;i++){
+        for(j=0;j<coluna;j++){
+            if(matriz[i][j]<0){
+                cont++;
+            }
+        }
+    }
     
     int num=linha*coluna;
     int porcentagem=(cont*100)/num;
     
     printf("porcentagem dos numeros negativos: %d \n",porcentagem);
+    
+    return 0;
 }
